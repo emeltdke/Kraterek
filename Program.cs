@@ -103,13 +103,7 @@ namespace kraterek
 
 
 
-            /** double x, y ,x2 ,y2 ;
-             x = 0;
-             y = 0;
-             x2 = 0;
-             y2 = 0;
-             
-             var gh= Math.Sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y));**/
+           
             StreamWriter sw = new StreamWriter(pathki);
             foreach (var item in list)
             {
@@ -118,8 +112,7 @@ namespace kraterek
                 sw.WriteLine($"{ad2}\t{ad1}");
 
             }
-            //var teruletek= list.Select(elem => new {elem.Nev,  ((float)(Math.Pow(elem.R,2)*Math.PI))});
-            //           Math.Round()
+            
             sw.Close();
             Console.ReadLine();
         }
